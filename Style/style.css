@@ -1,0 +1,213 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #faf7f2;
+    color: #30251e;
+    line-height: 1.6;
+}
+
+nav {
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #30251e;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.brand {
+    color: white;
+    font-size: 22px;
+}
+
+.brand span, #hero span {
+    color: #d5a779;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #d5a779;
+}
+
+#hero {
+    padding: 100px 10%;
+    min-height: 420px;
+    background: #eee3d5;
+}
+
+.tag {
+    color: #98704f;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+#hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+#hero p:not(.tag) {
+    color: #75675b;
+    max-width: 450px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 11px 20px;
+    background: #76513b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover, button:hover {
+    background: #30251e;
+}
+
+section:not(#hero) {
+    padding: 55px 8%;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#about {
+    text-align: center;
+}
+
+#about p, #contact > p {
+    max-width: 650px;
+    margin: auto;
+    color: #75675b;
+}
+
+#services {
+    background: #eee3d5;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.card, .article {
+    flex: 1 1 200px;
+    padding: 22px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e7d9c9;
+    transition: 0.3s;
+}
+
+.card:hover, .article:hover {
+    transform: translateY(-5px);
+}
+
+.card span {
+    color: #a67c59;
+    font-size: 13px;
+}
+
+.card h3, .article h3 {
+    margin: 8px 0;
+}
+
+.card p, .article p {
+    color: #75675b;
+    font-size: 14px;
+}
+
+#contact {
+    text-align: center;
+}
+
+form {
+    max-width: 450px;
+    margin: 25px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #dfd2c4;
+    border-radius: 5px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #76513b;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    padding: 20px;
+    background: #30251e;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #hero {
+        padding: 75px 8%;
+    }
+
+    #hero h1 {
+        font-size: 38px;
+    }
+
+    section:not(#hero) {
+        padding: 40px 6%;
+    }
+}
